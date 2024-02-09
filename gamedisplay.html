@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Marius</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .game {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .game img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Games Marius</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Latest Games</h3>
+            <div class="game" id="game1">
+                <img src="picture/game1.jpg" alt="Game 1">
+                <div>
+                    <h4>Super Mario Bros</h4>
+                    <p>Description of Game 1.</p>
+                    <button onclick="playGame('Game 1')">Play</button>
+                </div>
+            </div>
+            <!-- Add more game details as needed -->
+        </section>
+
+        <section>
+            <h3>Popular Games</h3>
+            <div class="game" id="game2">
+                <img src="picture/game2.jpg" alt="Game 2">
+                <div>
+                    <h4>Zelda:BOTW</h4>
+                    <p>Description of Game 2.</p>
+                    <button type="submit" href="snake.html" onclick="playGame('Game 2')">Play</button>
+                </div>
+
+            </div>
+            <!-- Add more game details as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LevelUp Labs. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function playGame(gameTitle) {
+            alert(`Launching ${gameTitle}...`);
+            // Add additional logic for launching games
+        }
+    </script>
+</body>
+</html>

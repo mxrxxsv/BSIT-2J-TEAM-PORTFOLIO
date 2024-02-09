@@ -1,0 +1,27 @@
+:root {
+    --bg: #fafafa;
+    --font:"Archivo", sans-serif;
+    --font-display: "Archivo", sans-serif;
+    --mainBg: #1d1e21;
+    --mainFont: #969696;   
+    --font: #ffffff;
+    /* --gradient:linear-gradient(35deg, var(--hotpink), var(--orange)); */
+    
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 28%);
+
+
+    --body-font: "Poppons", sans-serif;
+    --h2-font-size: 1.23rem;
+    --small-font-size: .813rem;
+}
+
+@media screen and (min-width: 1120px) {
+    :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+    }
+}
